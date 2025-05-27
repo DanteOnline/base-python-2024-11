@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.db.models import F
 
-from .models import Post, Comment, Author, AuthorProfile, Tag
+from .models import Post, Comment, Author, Tag
 
 # Register your models here.
 
@@ -61,5 +61,3 @@ class CommentAdmin(admin.ModelAdmin):
     list_filter = ['post', 'author']
     search_fields = ['text', 'author']
     search_help_text = 'Поиск по тексту комментария, имени автора и названию поста'
-
-

@@ -1,15 +1,11 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.views.generic.base import TemplateView
 from django.urls import reverse_lazy
 from django.contrib import messages
 
 from .models import Post, Author
-from .forms import PostForm, PostModelForm
-
-from random import randint
-# Create your views here.
+from .forms import PostModelForm
 
 
 def index(request):

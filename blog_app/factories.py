@@ -1,7 +1,6 @@
 import factory
-from blog_app.models import Comment, Post, Tag, Author
 from faker import Faker
-import random
+from blog_app.models import Author
 
 
 fake = Faker()

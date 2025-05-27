@@ -1,6 +1,6 @@
 import pytest
 from django.urls import reverse
-from blog_app.models import Author, Post
+from blog_app.models import Post
 
 
 def test_index(client):
@@ -36,7 +36,3 @@ def test_post_filter(client, author, post):
         author=author,
     )
     assert low_rating_post.title not in response.content.decode('utf-8')
-
-
-
-
