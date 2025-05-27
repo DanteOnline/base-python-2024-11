@@ -2,7 +2,7 @@ django
 faker
 factory-boy
 beautifulsoup4
-pytest
+pytest-cov
 pytest-django
 pytest-mock
 pylint
